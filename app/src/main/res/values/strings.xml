@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PopupWindowProject</string>
+    <string name="app_desc">Click here</string>
+    <string name="dialog_B.P">Enter your B.P</string>
+    <string name="dialog_Sugar">Enter your Sugar level</string>
+    <string name="dialog_height">Enter your Height</string>
+    <string name="dialog_weight">Enter your Weight</string>
+    <string name="dialog_Age">Enter your Age</string>
+
+    <string name="password">Enter Password</string>
+
+
+</resources>

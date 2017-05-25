@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quick Health survey"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/bp"
+        android:layout_width='wrap_content'
+        android:layout_height='wrap_content'
+        android:text="B.P:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_above="@+id/txt_sugar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <EditText
+        android:id='@+id/txt_BP'
+        android:layout_width="match_parent"
+        android:layout_height='wrap_content'
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp"
+        android:layout_toEndOf="@+id/sugar"
+        android:layout_toRightOf="@+id/sugar"
+        android:hint='@string/dialog_B.P'/>
+
+
+    <TextView
+        android:id="@+id/sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sugar:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_below="@+id/txt_BP"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txt_sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/dialog_Sugar"
+        android:inputType="textPersonName"
+        android:textColorLink="@android:color/black"
+        android:layout_alignBaseline="@+id/sugar"
+        android:layout_alignBottom="@+id/sugar"
+        android:layout_alignLeft="@+id/txt_BP"
+        android:layout_alignStart="@+id/txt_BP" />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width='wrap_content'
+        android:layout_height='wrap_content'
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sugar"
+        android:layout_marginTop="12dp"
+        android:text="height:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+
+
+    <EditText
+        android:id="@+id/txt_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/dialog_height"
+        android:inputType="textPersonName"
+        android:textColorLink="@android:color/black"
+        android:layout_alignBaseline="@+id/height"
+        android:layout_alignBottom="@+id/height"
+        android:layout_alignLeft="@+id/txt_sugar"
+        android:layout_alignStart="@+id/txt_sugar" />
+
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width='wrap_content'
+        android:layout_height='wrap_content'
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txt_height"
+        android:text="weight:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+
+    <EditText
+        android:id="@+id/txt_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/dialog_weight"
+        android:inputType="textPersonName"
+        android:textColorLink="@android:color/black"
+        android:layout_alignBaseline="@+id/weight"
+        android:layout_alignBottom="@+id/weight"
+        android:layout_alignLeft="@+id/txt_height"
+        android:layout_alignStart="@+id/txt_height" />
+
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width='wrap_content'
+        android:layout_height='wrap_content'
+        android:text="Age:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/txt_age"
+        android:layout_alignBottom="@+id/txt_age"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txt_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/dialog_Age"
+        android:inputType="textPersonName"
+        android:textColorLink="@android:color/black"
+        android:layout_below="@+id/weight"
+        android:layout_alignLeft="@+id/txt_weight"
+        android:layout_alignStart="@+id/txt_weight" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_age"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="Ok"
+        android:background="@color/colorPrimary"/>
+
+
+</RelativeLayout>
