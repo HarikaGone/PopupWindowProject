@@ -2,19 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent">
+    android:background="@drawable/im">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Health Estimation"
-        android:textSize="30dp"
-        android:textColor="@color/colorPrimary"
-        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:gravity="center"/>
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Health Estimation"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp" />
 
 
     <TextView
